@@ -1,27 +1,27 @@
-\begin{table*}[t]
-\centering
-\caption{Quantitative performance comparison of different MIL models on three TCGA datasets. The \textbf{best} results are highlighted in bold, and the \underline{second-best} results are underlined. Our MD-ViLa achieves state-of-the-art performance across almost all metrics.}
-\label{tab:main_results}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{llccccccc}
-\toprule
-\textbf{Dataset} & \textbf{Metric} & \textbf{ABMIL} & \textbf{DSMIL} & \textbf{CLAM-SB} & \textbf{CLAM-MB} & \textbf{TransMIL} & \textbf{ViLA-MIL} & \textbf{MD-ViLa (Ours)} \\
-\midrule
-\multirow{3}{*}{\textbf{TCGA-LUNG}} 
-& AUC & 0.865 $\pm$ 0.012 & 0.882 $\pm$ 0.015 & 0.895 $\pm$ 0.011 & 0.898 $\pm$ 0.014 & 0.921 $\pm$ 0.009 & \underline{0.945 $\pm$ 0.008} & \textbf{0.962 $\pm$ 0.007} \\
-& ACC & 0.821 $\pm$ 0.014 & 0.845 $\pm$ 0.012 & 0.852 $\pm$ 0.018 & 0.860 $\pm$ 0.013 & 0.885 $\pm$ 0.011 & \underline{0.912 $\pm$ 0.009} & \textbf{0.938 $\pm$ 0.008} \\
-& F1  & 0.815 $\pm$ 0.017 & 0.830 $\pm$ 0.016 & 0.841 $\pm$ 0.014 & 0.850 $\pm$ 0.015 & 0.875 $\pm$ 0.012 & \underline{0.905 $\pm$ 0.010} & \textbf{0.925 $\pm$ 0.009} \\
-\midrule
-\multirow{3}{*}{\textbf{TCGA-RCC}}  
-& AUC & 0.905 $\pm$ 0.011 & 0.915 $\pm$ 0.013 & 0.928 $\pm$ 0.010 & 0.935 $\pm$ 0.009 & 0.950 $\pm$ 0.008 & \underline{0.962 $\pm$ 0.007} & \textbf{0.981 $\pm$ 0.005} \\
-& ACC & 0.880 $\pm$ 0.015 & 0.895 $\pm$ 0.012 & 0.901 $\pm$ 0.014 & 0.910 $\pm$ 0.011 & 0.925 $\pm$ 0.010 & \underline{0.941 $\pm$ 0.009} & \textbf{0.965 $\pm$ 0.007} \\
-& F1  & 0.875 $\pm$ 0.016 & 0.888 $\pm$ 0.014 & 0.895 $\pm$ 0.015 & 0.905 $\pm$ 0.012 & 0.918 $\pm$ 0.011 & \underline{0.935 $\pm$ 0.008} & \textbf{0.958 $\pm$ 0.006} \\
-\midrule
-\multirow{3}{*}{\textbf{TCGA-BRCA}} 
-& AUC & 0.840 $\pm$ 0.018 & 0.855 $\pm$ 0.016 & 0.865 $\pm$ 0.015 & 0.870 $\pm$ 0.014 & 0.885 $\pm$ 0.012 & \underline{0.910 $\pm$ 0.011} & \textbf{0.935 $\pm$ 0.009} \\
-& ACC & 0.805 $\pm$ 0.021 & 0.820 $\pm$ 0.019 & 0.835 $\pm$ 0.017 & 0.842 $\pm$ 0.018 & 0.855 $\pm$ 0.014 & \underline{0.882 $\pm$ 0.012} & \textbf{0.905 $\pm$ 0.010} \\
-& F1  & 0.795 $\pm$ 0.023 & 0.810 $\pm$ 0.020 & 0.825 $\pm$ 0.018 & 0.830 $\pm$ 0.019 & 0.845 $\pm$ 0.015 & \textbf{0.875 $\pm$ 0.013} & \underline{0.868 $\pm$ 0.014} \\
-\bottomrule
-\end{tabular}
-}
-\end{table*}
+### Quantitative Performance Comparison
+
+The **best** results are highlighted in bold, and the <u>second-best</u> results are underlined. Our proposed model (MD) achieves state-of-the-art performance across the majority of metrics, demonstrating its robust capability in modeling cross-scale representations.
+
+| Model | Metric | TCGA-LUNG | TCGA-RCC | TCGA-BRCA |
+| :--- | :---: | :---: | :---: | :---: |
+| ABMIL | AUC | 0.6806 ± 0.0583 | 0.8717 ± 0.0356 | <u>0.7287 ± 0.0465</u> |
+| | ACC | 0.6322 ± 0.0370 | 0.7601 ± 0.0288 | 0.7878 ± 0.0278 |
+| | F1 | 0.6270 ± 0.0351 | 0.6987 ± 0.0714 | 0.5504 ± 0.0751 |
+| DSMIL | AUC | 0.6986 ± 0.0516 | 0.8472 ± 0.0609 | 0.6760 ± 0.0399 |
+| | ACC | 0.6377 ± 0.0285 | 0.7429 ± 0.0654 | 0.7741 ± 0.0183 |
+| | F1 | 0.6256 ± 0.0248 | 0.6704 ± 0.0837 | 0.5315 ± 0.0737 |
+| CLAM-SB | AUC | <u>0.7155 ± 0.0698</u> | 0.8767 ± 0.0474 | 0.7079 ± 0.0698 |
+| | ACC | **0.6576 ± 0.0384** | 0.7650 ± 0.0498 | 0.7663 ± 0.0331 |
+| | F1 | **0.6540 ± 0.0378** | 0.7241 ± 0.0721 | **0.5865 ± 0.0612** |
+| CLAM-MB | AUC | 0.6933 ± 0.0487 | 0.8681 ± 0.0472 | 0.7049 ± 0.0393 |
+| | ACC | 0.6378 ± 0.0305 | 0.7114 ± 0.0646 | 0.7899 ± 0.0257 |
+| | F1 | 0.6255 ± 0.0297 | 0.6742 ± 0.0620 | 0.4751 ± 0.0498 |
+| TransMIL | AUC | 0.5848 ± 0.0592 | 0.8764 ± 0.0260 | 0.6581 ± 0.0498 |
+| | ACC | 0.5504 ± 0.0469 | 0.7235 ± 0.0253 | 0.7928 ± 0.0107 |
+| | F1 | 0.5479 ± 0.0470 | 0.6827 ± 0.0154 | 0.5145 ± 0.0387 |
+| ViLA-MIL | AUC | 0.6937 ± 0.0915 | <u>0.9195 ± 0.0248</u> | 0.7120 ± 0.0435 |
+| | ACC | 0.6271 ± 0.0758 | <u>0.7882 ± 0.0517</u> | <u>0.7959 ± 0.0160</u> |
+| | F1 | 0.6234 ± 0.0795 | <u>0.7397 ± 0.0767</u> | 0.5161 ± 0.0478 |
+| **MD (Ours)** | AUC | **0.7231 ± 0.0889** | **0.9381 ± 0.0148** | **0.7505 ± 0.0776** |
+| | ACC | <u>0.6495 ± 0.0643</u> | **0.8252 ± 0.0255** | **0.7981 ± 0.0263** |
+| | F1 | <u>0.6472 ± 0.0649</u> | **0.7857 ± 0.0413** | <u>0.5560 ± 0.0747</u> |
