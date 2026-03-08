@@ -1,6 +1,6 @@
 ### Quantitative Performance Comparison
 
-The **best** results are highlighted in bold, and the $\underline{\text{second-best}}$ results are underlined. Our proposed model (MD) achieves state-of-the-art performance across the majority of metrics, demonstrating its robust capability in modeling cross-scale representations.
+The **best** results are highlighted in bold, and the second-best results are underlined like $\underline{0.7155 \pm 0.0698}$. Our proposed model (MD) achieves state-of-the-art performance across the majority of metrics, demonstrating its robust capability in modeling cross-scale representations.
 
 | Model | Metric | TCGA-LUNG | TCGA-RCC | TCGA-BRCA |
 | :--- | :---: | :---: | :---: | :---: |
