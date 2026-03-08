@@ -1,16 +1,16 @@
 ### Quantitative Performance Comparison
 
-The **best** results are highlighted in bold, and the second-best results are underlined like $\underline{0.7155 \pm 0.0698}$. Our proposed model (MD) achieves state-of-the-art performance across the majority of metrics, demonstrating its robust capability in modeling cross-scale representations.
+The **best** results are highlighted in bold, and the *second-best* results are italicized. Our proposed model (MD) achieves state-of-the-art performance across the majority of metrics, demonstrating its robust capability in modeling cross-scale representations.
 
 | Model | Metric | TCGA-LUNG | TCGA-RCC | TCGA-BRCA |
 | :--- | :---: | :---: | :---: | :---: |
-| ABMIL | AUC | 0.6806 ± 0.0583 | 0.8717 ± 0.0356 | $\underline{0.7287 \pm 0.0465}$ |
+| ABMIL | AUC | 0.6806 ± 0.0583 | 0.8717 ± 0.0356 | *0.7287 ± 0.0465* |
 | | ACC | 0.6322 ± 0.0370 | 0.7601 ± 0.0288 | 0.7878 ± 0.0278 |
 | | F1 | 0.6270 ± 0.0351 | 0.6987 ± 0.0714 | 0.5504 ± 0.0751 |
 | DSMIL | AUC | 0.6986 ± 0.0516 | 0.8472 ± 0.0609 | 0.6760 ± 0.0399 |
 | | ACC | 0.6377 ± 0.0285 | 0.7429 ± 0.0654 | 0.7741 ± 0.0183 |
 | | F1 | 0.6256 ± 0.0248 | 0.6704 ± 0.0837 | 0.5315 ± 0.0737 |
-| CLAM-SB | AUC | $\underline{0.7155 \pm 0.0698}$ | 0.8767 ± 0.0474 | 0.7079 ± 0.0698 |
+| CLAM-SB | AUC | *0.7155 ± 0.0698* | 0.8767 ± 0.0474 | 0.7079 ± 0.0698 |
 | | ACC | **0.6576 ± 0.0384** | 0.7650 ± 0.0498 | 0.7663 ± 0.0331 |
 | | F1 | **0.6540 ± 0.0378** | 0.7241 ± 0.0721 | **0.5865 ± 0.0612** |
 | CLAM-MB | AUC | 0.6933 ± 0.0487 | 0.8681 ± 0.0472 | 0.7049 ± 0.0393 |
@@ -19,9 +19,9 @@ The **best** results are highlighted in bold, and the second-best results are un
 | TransMIL | AUC | 0.5848 ± 0.0592 | 0.8764 ± 0.0260 | 0.6581 ± 0.0498 |
 | | ACC | 0.5504 ± 0.0469 | 0.7235 ± 0.0253 | 0.7928 ± 0.0107 |
 | | F1 | 0.5479 ± 0.0470 | 0.6827 ± 0.0154 | 0.5145 ± 0.0387 |
-| ViLA-MIL | AUC | 0.6937 ± 0.0915 | $\underline{0.9195 \pm 0.0248}$ | 0.7120 ± 0.0435 |
-| | ACC | 0.6271 ± 0.0758 | $\underline{0.7882 \pm 0.0517}$ | $\underline{0.7959 \pm 0.0160}$ |
-| | F1 | 0.6234 ± 0.0795 | $\underline{0.7397 \pm 0.0767}$ | 0.5161 ± 0.0478 |
+| ViLA-MIL | AUC | 0.6937 ± 0.0915 | *0.9195 ± 0.0248* | 0.7120 ± 0.0435 |
+| | ACC | 0.6271 ± 0.0758 | *0.7882 ± 0.0517* | *0.7959 ± 0.0160* |
+| | F1 | 0.6234 ± 0.0795 | *0.7397 ± 0.0767* | 0.5161 ± 0.0478 |
 | **MD (Ours)** | AUC | **0.7231 ± 0.0889** | **0.9381 ± 0.0148** | **0.7505 ± 0.0776** |
-| | ACC | $\underline{0.6495 \pm 0.0643}$ | **0.8252 ± 0.0255** | **0.7981 ± 0.0263** |
-| | F1 | $\underline{0.6472 \pm 0.0649}$ | **0.7857 ± 0.0413** | $\underline{0.5560 \pm 0.0747}$ |
+| | ACC | *0.6495 ± 0.0643* | **0.8252 ± 0.0255** | **0.7981 ± 0.0263** |
+| | F1 | *0.6472 ± 0.0649* | **0.7857 ± 0.0413** | *0.5560 ± 0.0747* |
